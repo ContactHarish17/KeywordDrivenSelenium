@@ -1,0 +1,6 @@
+btn_myaccount=.//*[@id='account']/a
+btn_logout=.//*[@id='account_logout']
+
+textbx_username=.//*[@id='log']
+textbx_password=.//*[@id='pwd']
+btn_login=.//*[@id='login']

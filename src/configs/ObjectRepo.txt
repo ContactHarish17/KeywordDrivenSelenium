@@ -1,0 +1,40 @@
+btn_signIn_account=.//span[contains(text(),'Sign in/Register')]
+
+
+//Sign In data
+txt_username=.//*[@id="popUserName"]
+txt_Password=.//*[contains(@type,'password')]
+btn_login=.//*[@class='button pullRight']
+btn_logout =.//*[@class="glyphicon glyphicon-log-out"]
+
+btn_myaccount=.//*[@class="fa fa-user-circle-o"]
+
+//Register
+btn_register=.//*[@class='cimm_button alignCenter']
+
+//New account Registrtation data
+link_newcommerical_account=.//*[@id="cimm_regBlock"]/ul/li[2]/a/span
+link_existingcustomer=.//*[@id="cimm_regBlock"]/ul/li[1]/a/span
+link_retail_customer=.//*[@id="cimm_regBlock"]/ul/li[3]/a/span
+
+btn_commericalcustomer=.//*[@class='dark-ripple done' or index=2]
+
+txt_firstname=.//*[@id="firstName2A"]
+txt_lastname=.//*[@id="lastName2A"]
+txt_companyname=.//*[@id="companyName2A"]
+txt_email=.//*[@id="emailAddress2A"]
+txt_password=.//*[@id="password2A"]
+txt_confirmpassword=.//*[@id="confirmPassword2A"]
+txt_address1=.//*[@id="billingAddress2A"]
+txt_address2=.//*[@id="suiteNo2A"]
+txt_cityname=.//*[@id="cityName2A"]
+select_country=.//*[@id="countryName2A"]
+select_state=.//*[@id="stateName2A"]
+txt_zipcode=.//*[@id="zipCode2A"]
+text_phone=.//*[@id="phoneNo2A"]
+btn_accept=.//*[@id="form2A"]/div[11]/input
+
+
+
+
+

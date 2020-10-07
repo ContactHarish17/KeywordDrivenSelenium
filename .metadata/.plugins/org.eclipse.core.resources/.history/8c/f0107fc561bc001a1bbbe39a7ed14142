@@ -1,0 +1,14 @@
+package cucumberrunner;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		format = {"Pretty", "html:target/cucumner"} 
+		)
+public class CucumberTestRunner {
+
+}

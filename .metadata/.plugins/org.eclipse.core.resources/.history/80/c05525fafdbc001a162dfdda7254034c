@@ -1,0 +1,38 @@
+package StepDefinitions;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class GoogleSearchSteps {
+	
+	@Given("browser is open")
+	public void browser_is_open() {
+	    System.out.println("inside steps - browser is open");
+	}
+
+	@Given("user is on google search")
+	public void user_is_on_google_search() {
+		 System.out.println("inside steps - user  is on google search");
+	}
+
+	@When("user enters a search text")
+	public void user_enters_a_search_text() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("hits enter")
+	public void hits_enter() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("use is navigated to search results")
+	public void use_is_navigated_to_search_results() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+}

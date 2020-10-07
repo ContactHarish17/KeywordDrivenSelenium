@@ -1,0 +1,9 @@
+#Feature: Login into ART Desktop 
+#
+#Scenario: 
+#	Given I open a chrome browser and open the artapp url
+#	And I click on I am saudi citizen button
+#	And I enter valid saudi mobile number 
+#	And I click on Next button 
+#	Then I should see the OTP screen 
+

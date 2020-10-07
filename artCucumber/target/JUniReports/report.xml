@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="0.639">
+<testcase classname="Creating a new partner for ART application" name="_2" time="0.163">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I open a chrome browser and enter the art url.........................undefined
+When I click on I am a saudi citizen........................................skipped
+And I enter a valid saudi number............................................skipped
+And I click on Next button..................................................skipped
+Then I Should see the OTP screen............................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Creating a new partner for ART application" name="_3" time="0.009">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I enter 9, 9, 9 and 9.................................................undefined
+And I click on Verify button................................................skipped
+Then I should see one last feet page........................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Creating a new partner for ART application" name="_4" time="0.012">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I enter the ART Saudi and artmobiledemo@gmail.com.....................undefined
+And I click on Letsgetstarted button........................................skipped
+Then I Should see home page.................................................skipped
+And a message welcome partner...............................................skipped
+]]></failure>
+</testcase>
+</testsuite>

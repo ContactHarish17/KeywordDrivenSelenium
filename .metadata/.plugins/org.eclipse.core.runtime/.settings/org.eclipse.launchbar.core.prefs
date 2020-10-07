@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:login.feature,org.eclipse.launchbar.core.descriptorType.default\:CucumberTestRunner,org.eclipse.launchbar.core.descriptorType.default\:ARTOpenApp,org.eclipse.launchbar.core.descriptorType.default\:CucumberTestRunner (1),org.eclipse.launchbar.core.descriptorType.default\:GoogleSearch.feature,org.eclipse.launchbar.core.descriptorType.default\:OnBoarding.feature
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:CucumberTestRunner\ (1)/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:CucumberTestRunner\ (1)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:DemoTest/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:DemoTest/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:login.feature/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:login.feature/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

@@ -1,0 +1,9 @@
+Feature: Login into ART Desktop
+
+Scenario: 
+	Given I open the art desktop app 
+	And I click on I'M a saudi citizen 
+	And I enter a valid saudi number 
+	And I click on Next button 
+	Then OTP page shown 
+	

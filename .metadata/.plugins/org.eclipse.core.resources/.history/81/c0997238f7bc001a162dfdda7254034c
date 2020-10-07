@@ -1,0 +1,90 @@
+package stepdefinitions;
+
+import java.io.File;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+
+public class ARTOpenApp {
+	
+	public WebDriver webdriver;
+	File chromepath = new File("D:\\artDesktop\\chromedriver\\chromedriver.exe");
+	
+	@Given("^I open a chrome browser and enter the art url $")
+    public void i_open_a_chrome_browser_and_enter_the_art_url() throws Throwable { 
+	 {
+		System.setProperty("webdriver.chrome.driver", chromepath.getAbsolutePath());
+	    webdriver = new ChromeDriver();
+		webdriver.manage().window().maximize();
+		webdriver.get("https://sit-partner.alrajhitakaful.com.cm/register");
+	}
+	
+
+	 @When("^I click on I am a saudi citizen $")
+	    public void i_click_on_i_am_a_saudi_citizen() throws Throwable {
+		 webdriver.findElement(By.xpath("//*[contains(text(),\"Yes, Maybe\")]")).click();
+	    
+	}
+
+	 @And("^I enter a valid saudi number $")
+	    public void i_enter_a_valid_saudi_number() throws Throwable {
+		webdriver.findElement(By.id("mobileNumber")).sendKeys("599885501");
+	}
+
+	 @And("^I click on Next button $")
+	    public void i_click_on_next_button() throws Throwable {
+		webdriver.findElement(By.xpath("//*[contains(text(),'Next')]")).click();
+	}
+
+	 @Then("^I Should see the OTP screen $")
+	    public void i_should_see_the_otp_screen() throws Throwable {
+		webdriver.findElement(By.id("validateOTP")).isDisplayed();
+        webdriver.quit();
+	}
+	 
+	 @Given("^I enter OTP1 (.+), OTP2 (.+), OTP3 (.+), OTP4 (.+) $")
+	    public void i_enter_otp1_otp2_otp3_otp4(String otp1, String otp2, String otp3, String otp4) throws Throwable {
+		 webdriver.findElement(By.cssSelector("input[id=\"otpDigit_1\"]")).sendKeys(otp1);
+		 webdriver.findElement(By.cssSelector("input[id=\"otpDigit_2\"]")).sendKeys(otp1);
+		 webdriver.findElement(By.cssSelector("input[id=\"otpDigit_3\"]")).sendKeys(otp1);
+		 webdriver.findElement(By.cssSelector("input[id=\"otpDigit_4\"]")).sendKeys(otp1);
+		 
+	 }
+	 
+	 @And("^I click on Verify button $")
+	 public void i_click_on_verify_button() throws Throwable
+	 {
+		 webdriver.findElement(By.id("validateOTP")).click();
+	 }
+	 @Then("^I should see one last feet page $")
+	    public void i_should_see_one_last_feet_page() throws Throwable {
+		 webdriver.findElement(By.xpath("//*[@id=\"23BD780B-E525-420D-B8CE-6A3B686CBE50\"]/div/div/h2")).isDisplayed();
+	 }
+	 
+	 @Given("^I enter the partnername (.+) , emailaddress (.+) $")
+	    public void i_enter_the_partnername_emailaddress(String name, String email) throws Throwable {
+		 webdriver.findElement(By.id("fullName")).sendKeys(name);
+		 webdriver.findElement(By.id("email")).sendKeys(email);
+		 
+	 }
+	        
+	    }
+	 @And("^I click on Letsgetstarted button $")
+	    public void i_click_on_letsgetstarted_button() throws Throwable {
+		 webdriver.findElement(By.xpath("//*[@class=\"button float-left register-submit-cls\"]")).click();
+	       
+	    }
+	 @Then("^I Should see home page $")
+	    public void i_should_see_home_page() throws Throwable {
+	        webdriver.findElement(By.xpath("//*[contains(text(),'Quick Learning')]")).isDisplayed()
+	    }
+	 @And("^a message welcome partner $")
+	    public void a_message_welcome_partner() throws Throwable {
+	       
+	    }
+}
